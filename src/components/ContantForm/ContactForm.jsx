@@ -30,6 +30,7 @@ export const ContactForm = ({ onForm }) => {
     <Form onSubmit={e => handleSubmit(e)}>
       <Label htmlFor="name">Name </Label>
       <Input
+        autoComplete='off'
         value={name}
         id="name"
         type="text"
@@ -42,6 +43,7 @@ export const ContactForm = ({ onForm }) => {
 
       <Label htmlFor="tel">Number </Label>
       <Input
+        autoComplete='off'
         value={number}
         id="tel"
         type="tel"
